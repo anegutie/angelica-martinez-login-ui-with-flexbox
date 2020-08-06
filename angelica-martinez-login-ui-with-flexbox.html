@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
+        <style>
+            html,
+            body {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #wrapper {
+                background-color: rgb(255, 255, 255));
+                padding:21px;
+                text-transform: uppercase;
+                width:400px;
+                box-shadow: 0px 2px 30px 9px rgba(0,0,0,0.37);
+                border-radius: 25px;
+            }
+            .container-fluid {
+                background-image: linear-gradient(to top,#f4978e,#eaac8b,#fbc4ab,white );
+                /* **couldn't get URL's to work**
+                background: url (https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.rawpixel.com%2Fs3fs-private%2Frawpixel_images%2Fwebsite_content%2Fv397-aum-25-leaf_2.jpg%3Fbg%3Dtransparent%26con%3D3%26cs%3Dsrgb%26dpr%3D1%26fm%3Djpg%26ixlib%3Dphp-3.1.0%26q%3D80%26usm%3D15%26vib%3D3%26w%3D1300%26s%3Dfe2dea6b84fee144573101969200348f&imgrefurl=https%3A%2F%2Fwww.rawpixel.com%2Fimage%2F545546%2Fgreen-floral-background%23%3A~%3Atext%3DSave&tbnid=lI_qfcvmsKgEvM&vet=12ahUKEwig5c60voXrAhWMpp4KHfXABA4QMygVegUIARCdAw..i&docid=2vMWA7iNtS3AUM&w=1300&h=910&q=floral%20background&ved=2ahUKEwig5c60voXrAhWMpp4KHfXABA4QMygVegUIARCdAw);
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size: cover;*/
+            }
+            .input-group {
+                width:100%;
+                
+            }
+            input {
+                background-color: rgba(255, 255, 255, 0.192) ;
+                border: none;
+                color: black;
+                text-transform: lowercase;
+                margin-bottom: 25px;
+                padding: 9px;
+                width: calc(100% - 44px);
+                border-bottom:1px solid #000;
+            }
+
+            button {
+                border: none;
+                display:block;
+                letter-spacing: 1.5;
+                background-color: #118ab2c5;
+                margin:0 auto;
+                margin-top:20px;
+                margin-bottom:15px;
+                padding:9px;
+                width:80%;
+                border-radius: 25px;
+                width:calc(100%-44px);
+                box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.25);
+            }
+            .col {
+                height:100vh;
+            }
+            input::placeholder {
+                color:rgba(0, 0, 0, 0.219);
+            }
+            button:hover {
+                background-color: rgba(243, 74, 102, 0.192);
+            }
+            input,
+            .icon-wrapper {
+                height:44px;
+            }
+            .icon-wrapper {
+                align-items: center;
+                background-color: #118ab2c5;
+                width: 44px;
+                display:flex;
+                justify-content: center;
+            }
+            .icon-wrapper i {
+                color:rgba(252, 252, 252, 0.692);
+                font-size: 21px;
+            }
+            h3 {
+                color:#118ab2c5;
+                letter-spacing: 1.5;
+                margin-bottom:40px;
+                margin-top:25px;
+                text-align: center;
+                text-transform: initial;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <div id="wrapper">  
+                    <h3>Sign in</h3>
+                    <div class="input-group">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-user-circle" aria-hidden="true"> </i>
+                        </div>
+                        <input placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-lock" aria-hidden="true"> </i>
+                        </div>                   
+                        <input type="password" placeholder="Password">    
+                    </div>
+                    <button class="d-block"> Sign in </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
